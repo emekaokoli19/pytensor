@@ -357,6 +357,8 @@ def test_custom_rng_deepcopy_output_identical():
     x2 = rng2.normal(size=10)
 
     assert np.allclose(x1, x2)
+
+
 def test_normalize_size_param():
     assert normalize_size_param(None).type == NoneTypeT()
 
